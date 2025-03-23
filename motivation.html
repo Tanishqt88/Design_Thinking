@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation & Rewards - WakeUp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WakeUp</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="alarm.html">Alarm Feature</a></li>
+                <li><a href="attendance.html">Attendance Tracking</a></li>
+                <li><a href="motivation.html">Motivation & Rewards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="motivation">
+        <h2>Motivation & Rewards</h2>
+        <div class="rewards">
+            <h3>Your Reward Points: <span id="reward-points">0</span></h3>
+
+            <h4>Leaderboard</h4>
+            <ul id="leaderboard">
+                <!-- Leaderboard will update dynamically -->
+            </ul>
+
+            <h4>Redeemable Incentives</h4>
+            <select id="reward-options">
+                <option value="coffee" data-cost="50">☕ Free Coffee - 50 Points</option>
+                <option value="library" data-cost="100">📚 Library Access - 100 Points</option>
+                <option value="discount" data-cost="200">🎟 Discount Coupon - 200 Points</option>
+            </select>
+            <button id="redeem-reward">Redeem</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 WakeUp. All rights reserved.</p>
+    </footer>
+
+    <script src="rewards.js"></script>
+</body>
+</html>

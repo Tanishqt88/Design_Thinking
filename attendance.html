@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracking - WakeUp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WakeUp</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="alarm.html">Alarm Feature</a></li>
+                <li><a href="attendance.html">Attendance Tracking</a></li>
+                <li><a href="motivation.html">Motivation & Rewards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="attendance">
+        <h2>Your Attendance Records</h2>
+
+        <button id="mark-attendance">Mark Today's Attendance</button>
+
+        <div class="attendance-records">
+            <h3>Weekly Attendance</h3>
+            <p id="weekly-attendance">Attendance: 0/7</p>
+
+            <h3>Monthly Attendance</h3>
+            <p id="monthly-attendance">Attendance: 0/30</p>
+        </div>
+
+        <h3>Daily Attendance</h3>
+        <ul id="attendance-list">
+            <!-- Attendance days will be added here dynamically -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 WakeUp. All rights reserved.</p>
+    </footer>
+
+    <script src="attendance.js"></script>
+</body>
+</html>

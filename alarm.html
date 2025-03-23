@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Alarm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Set Your Alarm</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="alarm-container">
+        <h2>Select Time</h2>
+        <div id="clock">
+            <div id="clock-numbers"></div>
+            <div id="hour-hand"></div>
+            <div id="minute-hand"></div>
+            <div id="center-dot"></div>
+        </div>
+        <p id="selected-time">12:00</p>
+        <button id="set-alarm">Set Alarm</button>
+
+        <!-- Countdown Timer Card -->
+        <div id="countdown-card">
+            <h3>Time Left</h3>
+            <p id="countdown-timer">00:00:00</p>
+            <button id="stop-alarm" style="display: none;">Stop Alarm</button>
+        </div>
+    </section>
+
+    <section id="math-challenge" class="hidden">
+        <h2>Solve to Stop Alarm</h2>
+        <p id="math-question"></p>
+        <input type="number" id="math-answer" placeholder="Enter answer">
+        <button id="submit-answer">Stop Alarm</button>
+    </section>
+
+    <!-- Alarm Sound -->
+    <audio id="alarm-sound" src="Alarm clock sound.mp3"></audio>
+
+</body>
+</html>
